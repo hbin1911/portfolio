@@ -63,7 +63,7 @@ const Home = () => {
             }}/>
 
             <div>
-              <a href="../assests/Rajas Resume.docx" download={true}>
+              <a href="../assests/Rajas Resume.pdf" download={true}>
                 Resume <BsArrowDown/>
               </a>
               <a href="#work">
