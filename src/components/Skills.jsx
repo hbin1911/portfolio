@@ -42,7 +42,7 @@ const Skills = () => {
                     className="icon"
                   />
                   <div>
-                    <h3>SASS</h3>
+                    <h3>Bootstrap</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -64,7 +64,7 @@ const Skills = () => {
                     className="icon"
                   />
                   <div>
-                    <h3>TypeScript</h3>
+                    <h3>React JS</h3>
                     <p>Basic</p>
                   </div>
                 </article>
@@ -82,7 +82,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="details-container">
-              <h2 className="experience-sub-title">Frontend Development</h2>
+              <h2 className="experience-sub-title">Backend Development</h2>
               <div className="article-container">
                 <article>
                   <img
@@ -91,7 +91,7 @@ const Skills = () => {
                     className="icon"
                   />
                   <div>
-                    <h3>PostgreSQL</h3>
+                    <h3>Node JS</h3>
                     <p>Basic</p>
                   </div>
                 </article>
@@ -102,7 +102,7 @@ const Skills = () => {
                     className="icon"
                   />
                   <div>
-                    <h3>Node JS</h3>
+                    <h3>Express JS</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -113,7 +113,29 @@ const Skills = () => {
                     className="icon"
                   />
                   <div>
-                    <h3>Express JS</h3>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src={check}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div>
+                    <h3>MySql</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src={check}
+                    alt="Experience icon"
+                    className="icon"
+                  />
+                  <div>
+                    <h3>MongoDB</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>

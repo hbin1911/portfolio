@@ -58,8 +58,12 @@
                     width: 10rem;
                     color: $color5;
                     position: relative;
-                    padding-left: 2rem;
+                    padding-left: 0rem;
                     padding-top: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
           
                     &::after {
                       content: "";

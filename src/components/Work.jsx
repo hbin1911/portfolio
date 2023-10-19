@@ -2,11 +2,38 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "../assests/data.json";
+import "../styles/work.css"
 
 const Work = () => {
   return (
     <div id="work">
-      <h2>WORK</h2>
+      {
+        data.projects.map((i)=>(
+          <div className="slide-container">
+        <div className="slide-content">
+          <div className="card-wrapper">
+            <div className="card">
+              <div className="image-content">
+                <span className="overlay"></span>
+
+                <div className="card-image">
+                  <img src={i.imgSrc} alt="" />
+                </div>
+
+                <div className="card-content">
+                  <h2 className="name">{i.title}</h2>
+                  <p className="description">{i.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        ))
+      }
+      
+      {/* <h2>WORK</h2>
       <section>
         <article>
           <Carousel
@@ -32,7 +59,7 @@ const Work = () => {
             ))}
           </Carousel>
         </article>
-      </section>
+      </section> */}
     </div>
   );
 };
