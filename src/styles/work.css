@@ -73,7 +73,7 @@
   }
   .card{
     border-radius: 25px;
-    background-color: white;
+    background-color: red;
   }
   .card-image{
     position: relative;
