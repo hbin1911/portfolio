@@ -27,6 +27,19 @@
                     width: 70%;
                     gap: 4rem;
                     align-items: center;
+                    // > button{
+                    //         background-color: $color3;
+                    //         color: $color1;
+                    //         padding: 0.8rem 2rem;
+                    //         transition: all 0.3s;
+                    //         margin-top: 3rem;
+                    //         border: none;
+                    //         cursor: pointer;
+
+                    //         &:hover{
+                    //             background-color: $color3_1;
+                    //         }
+                    // }
                     > a{
                         &:first-of-type{
                             background-color: $color3;
