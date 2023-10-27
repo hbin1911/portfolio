@@ -6,7 +6,10 @@
     
     
   }
-  
+  .heading{
+    font-size: 3rem;
+    text-align: center;
+  }
   .slide-container{
     overflow-x: scroll;
     margin: 3rem;

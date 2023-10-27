@@ -7,6 +7,7 @@ import "../styles/work.css";
 const Work = () => {
   return (
     <div id="work">
+      
       <h1 className="heading">Projects</h1>
       <div className="slide-container">
         <div className="slide-content">
