@@ -2,11 +2,11 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import datas from "../assests/data.json";
-import "../styles/work.css";
+import "../styles/work.scss"
 
 const Work = () => {
   return (
-    <div id="work">
+    <div className="work">
       
       <h1 className="heading">Projects</h1>
       <div className="slide-container">

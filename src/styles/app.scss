@@ -7,7 +7,8 @@
 @import "contact";
 @import "footer";
 @import "mediaquery";
-// @import "work";
+@import "skills";
+@import "work";
 
 
 
@@ -29,5 +30,5 @@ body{
 
 .disableBtn{
     background-color: rgb(237,237,237);
-    cursor: not-allowed;
+    cursor: not-allowed !important;
 }

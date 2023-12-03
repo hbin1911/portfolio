@@ -10,7 +10,7 @@ const Header = () => {
 
 const NavContent = () => (
     <>
-    <h2>Rajas.</h2>
+    <h2>Rajas</h2>
     <div>
         <a href="#home">Home</a>
         <a href="#work">Work</a>

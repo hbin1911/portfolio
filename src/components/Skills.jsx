@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/skills.css";
+// import "../styles/skills.css";
+import "../styles/skills.scss"
 import check from "../assests/checkmark.png";
 
 const Skills = () => {

@@ -1,0 +1,83 @@
+.work {
+  width: 100%;
+  height: 105vh;
+  margin-top: 2rem;
+  text-align: center;
+  // background-color: red;
+
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .slide-container {
+    overflow-x: scroll;
+    margin: 1rem;
+    border-radius: 10px;
+
+    &::-webkit-scrollbar {
+      width: 12px; // Set the width of the scrollbar
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #f26440; // Set the color of the thumb
+      border-radius: 6px; // Set the radius of the thumb
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #ddd; // Set the color of the track
+      border-radius: 10px; // Set the radius of the track
+    }
+
+    &::-webkit-scrollbar-corner {
+      background-color: transparent; // Set the color of the scrollbar corner
+    }
+  }
+
+  .card {
+    border-radius: 25px;
+    background-color: white;
+    height: 430px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .card-wrapper {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .name {
+    margin-bottom: 5px;
+  }
+
+  .btn {
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px;
+
+    .btn-github, .btn-demo {
+      padding: 4px 9px;
+      background-color: #f26440;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

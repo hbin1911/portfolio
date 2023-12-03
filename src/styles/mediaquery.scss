@@ -1,345 +1,457 @@
+// $orange-color: #f26440;
+
+// #skills {
+//   margin-top: 2rem;
+
+//   .icon {
+//     cursor: pointer;
+//     height: 2rem;
+//   }
+
+//   .section__text__p1 {
+//     margin-top: 2rem;
+//     text-align: center;
+//   }
+
+//   .title {
+//     font-size: 3rem;
+//     text-align: center;
+//   }
+
+//   #experience {
+//     position: relative;
+
+//     .experience-sub-title {
+//       color: rgb(85, 85, 85);
+//       font-weight: 600;
+//       font-size: 1.75rem;
+//       margin-bottom: 2rem;
+//     }
+
+//     .experience-details-container {
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+
+//       .article-container {
+//         display: flex;
+//         text-align: initial;
+//         flex-wrap: wrap;
+//         flex-direction: row;
+//         gap: 2.5rem;
+//         justify-content: space-around;
+
+//         article {
+//           display: flex;
+//           width: 100%; // Full width for small screens
+//           max-width: 20rem; // Limit width for larger screens
+//           justify-content: space-around;
+//           gap: 0.5rem;
+
+//           // .icon {
+//           //   cursor: default;
+//           // }
+//         }
+//       }
+//     }
+//   }
+
+// .about-containers {
+//   gap: 2rem;
+//   margin-bottom: 2rem;
+//   margin-top: 2rem;
+//   display: flex;
+
+//   .details-container {
+//     padding: 1.5rem;
+//     display: flex;
+//     flex-direction: column;
+//     flex: 1;
+//     background: white;
+//     border-radius: 2rem;
+//     border: rgb(53, 53, 53) 0.1rem solid;
+//     border-color: $orange-color;
+//     text-align: center;
+//     margin: 2rem;
+
+//     h3 {
+//       color: $orange-color;
+//     }
+//   }
+// }
+
+@media (max-width: 768px) {
+  // Apply styles for screens smaller than 768px wide
+  .experience-details-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .article-container {
+      
+      article {
+        width: 100%; // Full width for small screens
+        max-width: none; // Remove max-width for small screens
+        flex-basis: 100%; // Ensure each article takes full width
+      }
+    }
+  }
+  
+}
+// }
+
 @media screen and (max-width: 1367px) {
-    nav {
-      padding: 0 $p_md;
+  nav {
+    padding: 0 $p_md;
+  }
+
+  #home {
+    height: 100vh;
+    > section {
+      &:first-of-type {
+        padding-left: $p_md;
+        > div aside {
+          width: 85%;
+        }
+      }
     }
-  
-    #home {
-      height: 100vh;
-      > section {
-        &:first-of-type {
-          padding-left: $p_md;
-          > div aside {
-            width: 85%;
+  }
+
+  #work {
+    padding: 8rem $p_md;
+    height: 110vh;
+    > section {
+      > article {
+        height: 20rem;
+        width: 90%;
+      }
+      .workItem {
+        padding: 2rem;
+        height: 20rem;
+        > aside {
+          > p {
+            margin: 1rem;
+          }
+          > a {
+            margin: 1rem;
           }
         }
       }
     }
-  
-    #work {
-      padding: 8rem $p_md;
-      height: 110vh;
-      > section {
-        > article {
-          height: 20rem;
-          width: 90%;
-        }
-        .workItem {
-          padding: 2rem;
-          height: 20rem;
-          > aside {
-            > p {
-              margin: 1rem;
-            }
-            > a {
-              margin: 1rem;
-            }
+  }
+
+  #services {
+    padding: $p_md;
+    > section {
+      height: 90%;
+    }
+  }
+  #testimonial {
+    padding: $p_md;
+    > section {
+      width: 100%;
+    }
+  }
+
+  #contact > section > form {
+    > input,
+    > button {
+      font: 400 0.8rem $text1;
+      width: 50%;
+    }
+  }
+
+  footer {
+    padding-left: $p_md;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    padding: 0 $p_base;
+  }
+
+  #home {
+    height: 110vh;
+    > section {
+      &:first-of-type {
+        padding-left: $p_base;
+        > div {
+          > h1 {
+            font: 900 3rem $text1;
+          }
+
+          aside {
+            width: 100%;
           }
         }
       }
     }
-  
-    #services {
-      padding: $p_md;
-      > section {
-        height: 90%;
+  }
+
+  #work {
+    padding: 8rem $p_base;
+  }
+
+  #services {
+    padding: $p_base_inverse;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 0 $p_sm;
+    > h2 {
+      font-size: 1.8rem;
+    }
+    > div {
+      gap: 1rem;
+    }
+  }
+
+  #home {
+    > section {
+      &:first-of-type {
+        padding-left: $p_sm;
+        > div {
+          > div {
+            gap: 2rem;
+            width: 100%;
+          }
+          aside {
+            flex-direction: column;
+          }
+        }
       }
     }
-    #testimonial {
-      padding: $p_md;
-      > section {
-        width: 100%;
+  }
+
+  #work {
+    padding: 8rem $p_zero;
+    > section {
+      > article {
+        height: 25rem;
+      }
+      .workItem {
+        height: 25rem;
       }
     }
-  
-    #contact > section > form {
-      > input,
-      > button {
-        font: 400 0.8rem $text1;
+  }
+
+  #services {
+    padding: $p_sm_inverse;
+    height: 90vh;
+  }
+  #testimonial {
+    padding: $p_zero;
+    > h2 {
+      padding: 3rem;
+      margin-bottom: 0%;
+    }
+    > section {
+      padding: 3rem;
+      height: 45rem;
+      justify-content: space-evenly;
+
+      > article {
+        width: 40%;
+        height: 50%;
+      }
+    }
+  }
+
+  #contact > section > form {
+    > h2 {
+      font: 100 2.3rem $text2;
+    }
+    > input,
+    > button {
+      width: 65%;
+    }
+  }
+
+  footer {
+    padding-left: $p_zero;
+    grid-template-columns: 1fr;
+    > div {
+      width: 100%;
+      border: none;
+      p {
         width: 50%;
+        margin: 2rem auto;
       }
     }
-  
-    footer {
-      padding-left: $p_md;
+    > a {
+      margin: 1rem;
     }
   }
-  
-  @media screen and (max-width: 1100px) {
-    nav {
-      padding: 0 $p_base;
-    }
-  
-    #home {
-      height: 110vh;
-      > section {
-        &:first-of-type {
-          padding-left: $p_base;
-          > div {
-            > h1 {
-              font: 900 3rem $text1;
-            }
-  
-            aside {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  
-    #work {
-      padding: 8rem $p_base;
-    }
-  
-    #services {
-      padding: $p_base_inverse;
-      text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+  nav {
+    > div,
+    > a {
+      display: none;
     }
   }
-  
-  @media screen and (max-width: 900px) {
-    nav {
-      padding: 0 $p_sm;
-      > h2 {
-        font-size: 1.8rem;
-      }
-      > div {
-        gap: 1rem;
-      }
-    }
-  
-    #home {
-      > section {
-        &:first-of-type {
-          padding-left: $p_sm;
-          > div {
-            > div {
-              gap: 2rem;
-              width: 100%;
-            }
-            aside {
-              flex-direction: column;
-            }
-          }
-        }
-      }
-    }
-  
-    #work {
-      padding: 8rem $p_zero;
-      > section {
-        > article {
-          height: 25rem;
-        }
-        .workItem {
-          height: 25rem;
-        }
-      }
-    }
-  
-    #services {
-      padding: $p_sm_inverse;
-      height: 90vh;
-    }
-    #testimonial {
-      padding: $p_zero;
-      > h2 {
-        padding: 3rem;
-        margin-bottom: 0%;
-      }
-      > section {
-        padding: 3rem;
-        height: 45rem;
-        justify-content: space-evenly;
-  
-        > article {
-          width: 40%;
-          height: 50%;
-        }
-      }
-    }
-  
-    #contact > section > form {
-      > h2 {
-        font: 100 2.3rem $text2;
-      }
-      > input,
-      > button {
-        width: 65%;
-      }
-    }
-  
-    footer {
-      padding-left: $p_zero;
-      grid-template-columns: 1fr;
-      > div {
-        width: 100%;
-        border: none;
-        p {
-          width: 50%;
-          margin: 2rem auto;
-        }
-      }
-      > a {
-        margin: 1rem;
-      }
-    }
+  .navBtn {
+    display: block;
   }
-  
-  @media screen and (max-width: 786px) {
-    nav {
-      > div,
-      > a {
-        display: none;
-      }
-    }
-    .navBtn {
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    #home {
-      height: unset;
-      flex-direction: column-reverse;
-  
-      > section {
-        &:first-of-type {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-  
-          > div {
-            border: none;
-            padding-top: 3rem;
-            > h1 {
-              font: 900 2.5rem $text1;
-            }
-            > div {
-              flex-direction: column;
-            }
-            aside {
-              align-items: center;
-            }
-  
-            article[data-special] {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              span {
-                display: block;
-                width: 70%;
-                word-wrap: break-word;
-              }
-            }
-  
-            article {
-              width: 100%;
-              text-align: center;
-              &::after {
-                top: 0;
-                left: 0%;
-              }
-            }
-          }
-        }
-  
-        &:last-of-type {
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    height: unset;
+    flex-direction: column-reverse;
+
+    > section {
+      &:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        // background-color: red;
+        margin-bottom: 2rem;
+
+
+        > div {
           border: none;
-        }
-      }
-  
-      > svg {
-        font-size: 2rem;
-        bottom: 12%;
-      }
-    }
-  
-    #work {
-      > section {
-        > article {
-          width: 100%;
-          height: 30vmax;
-        }
-        .workItem {
-          height: 30vmax;
-          box-shadow: 0 0 5px $color1;
-          > aside {
-            padding: 1rem;
-  
-            > h3 {
-              margin: 1rem;
+          // background-color: red;
+          padding-top: 0.5rem;
+          // margin-bottom: 2rem;
+          > h1 {
+            font: 900 2.5rem $text1;
+          }
+          > div {
+            flex-direction: column;
+          }
+          aside {
+            align-items: center;
+          }
+
+          article[data-special] {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+              display: block;
+              width: 70%;
+              word-wrap: break-word;
             }
-  
-            > p {
-              letter-spacing: 0;
-              line-height: unset;
-              margin: 0%;
-              font-size: 0.75rem;
-            }
-  
-            > a {
-              padding: 0.4rem 0.7rem;
-              font-size: 0.7rem;
-              margin: 1rem;
+          }
+
+          article {
+            width: 100%;
+            text-align: center;
+            &::after {
+              top: 0;
+              left: 0%;
             }
           }
         }
       }
-    }
-  
-    #timeline {
-      .timelineBox::after {
-        left: 31px;
+
+      &:last-of-type {
+        border: none;
       }
-  
-      .timelineItem {
-        width: 100%;
-        padding-left: 5rem;
-        padding-right: 2rem;
-      }
-  
-      .rightTimeline {
-        left: 0%;
-      }
-      .leftTimeline,
-      .rightTimeline {
-        &::after {
-          left: 15px;
-        }
+      > img {
+        width: 30vmax;
+        object-fit: contain;
+        height: 45vmax;
+        margin-bottom: 0; // Remove the margin for smaller screens
       }
     }
-  
-    #services {
-      > section {
-        margin: 3rem 0;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        .serviceBox1 {
-          grid-column: 1/3;
-          grid-row: unset;
-        }
-  
-        .serviceBox4 {
-          grid-column: 1/3;
-        }
-      }
+
+    > svg {
+      font-size: 2rem;
+      bottom: 12%;
     }
-    #testimonial > section {
-      height: unset;
-      gap: 3rem;
+  }
+
+  #work {
+    > section {
       > article {
         width: 100%;
-        height: 100vw;
+        height: 30vmax;
       }
-    }
-  
-    #contact {
-      grid-template-columns: 1fr;
-      > aside {
-        display: none;
+      .workItem {
+        height: 30vmax;
+        box-shadow: 0 0 5px $color1;
+        > aside {
+          padding: 1rem;
+
+          > h3 {
+            margin: 1rem;
+          }
+
+          > p {
+            letter-spacing: 0;
+            line-height: unset;
+            margin: 0%;
+            font-size: 0.75rem;
+          }
+
+          > a {
+            padding: 0.4rem 0.7rem;
+            font-size: 0.7rem;
+            margin: 1rem;
+          }
+        }
       }
     }
   }
+
+  #timeline {
+    .timelineBox::after {
+      left: 31px;
+    }
+
+    .timelineItem {
+      width: 100%;
+      padding-left: 5rem;
+      padding-right: 2rem;
+    }
+
+    .rightTimeline {
+      left: 0%;
+    }
+    .leftTimeline,
+    .rightTimeline {
+      &::after {
+        left: 15px;
+      }
+    }
+  }
+
+  #services {
+    > section {
+      margin: 3rem 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .serviceBox1 {
+        grid-column: 1/3;
+        grid-row: unset;
+      }
+
+      .serviceBox4 {
+        grid-column: 1/3;
+      }
+    }
+  }
+  #testimonial > section {
+    height: unset;
+    gap: 3rem;
+    > article {
+      width: 100%;
+      height: 100vw;
+    }
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+    > aside {
+      display: none;
+    }
+  }
+}

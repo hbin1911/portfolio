@@ -2,17 +2,16 @@ import React from "react";
 import {
     AiFillGithub,
     AiFillInstagram,
-    AiFillYoutube,
     AiOutlineArrowUp,
   } from "react-icons/ai";
-  
+  import hello from "../assests/footer-pic.png"
 
 const Footer = () => {
   return (
     <footer>
       <div>
         <img
-          src={"https://avatars.githubusercontent.com/u/25058652"}
+          src={hello}
           alt="Founder"
         />
 

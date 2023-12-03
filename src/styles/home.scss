@@ -10,7 +10,7 @@
             >div{
                 border-top: 1px solid $color6_2;
                 height: 100%;
-                padding-top: 2rem;
+                padding-top: 1.5rem;
                 >h1{
                     font: 400 3.5rem $text1;
                 }
@@ -125,19 +125,20 @@
             overflow-x: hidden;
 
             &::after{
-                content: "";
-                width: 40vmax;
-                height: 40vmax;
-                background-color: $color3;
-                position: absolute;
-                z-index: -1;
-                border-radius: 50%;
+                // content: "";
+                // // width: 35vmax;
+                // // height: 35vmax;
+                // background-color: $color3;
+                // position: absolute;
+                // z-index: -1;
+                // border-radius: 50%;
             }
 
             > img{
-                width: 40vmax;
+                width: 30vmax;
                 object-fit: contain;
                 height: 45vmax;
+                margin-bottom: 6rem;
             }
         }
         

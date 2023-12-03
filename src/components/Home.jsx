@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {animate, motion} from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import {BsArrowDown, BsArrowUpRight, BsChevronDown} from "react-icons/bs";
-import me from "../assests/IMG_20231017_125820.png"
+import me from "../assests/profile-pic.png"
 
 const Home = () => {
 
@@ -101,7 +101,7 @@ const Home = () => {
       <section>
         <img src={me} alt="Rajas" />
       </section>
-      <BsChevronDown/>
+      {/* <BsChevronDown/> */}
     </div>
   )
 }
