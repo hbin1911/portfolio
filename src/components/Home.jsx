@@ -3,6 +3,7 @@ import {animate, motion} from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import {BsArrowDown, BsArrowUpRight, BsChevronDown} from "react-icons/bs";
 import me from "../assests/profile-pic.png"
+import resume from "../assests/Resume.pdf"
 
 const Home = () => {
 
@@ -79,7 +80,7 @@ const Home = () => {
             }}/>
 
             <div>
-              <a href="../assests/Rajas Resume-1-1-1.pdf" target='_blank' download="Rajas_Resume.pdf">
+              <a href={resume} download="Resume">
                 Resume <BsArrowDown/>
               </a>
               <a href="#Work">
