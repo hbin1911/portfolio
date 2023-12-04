@@ -1,28 +1,40 @@
-import React from 'react'
+import React, {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 const Header = () => {
-  return <nav>
-    <NavContent/>
-  </nav>
-    
-  
-}
 
-const NavContent = () => (
-    <>
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  return (
+    <nav id="header">
+      <NavContent menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+    </nav>
+  );
+};
+
+const NavContent = ({menuOpen, setMenuOpen}) => (
+  <>
     <h2>Rajas</h2>
-    <div>
-        <a href="#home">Home</a>
-        <a href="#work">Work</a>
-        {/* <a href="#timeline">Experience</a> */}
-        <a href="#skills">Skills</a>
-        {/* <a href="#testimonial">Testimonial</a> */}
-        <a href="#contact">Contact</a>
+    <section className="menu" onClick={()=> setMenuOpen(!menuOpen)}>
+      {/* <span className="span"></span>
+      <span className="span"></span>
+      <span className="span"></span> */}
+      <FontAwesomeIcon icon={faBars} className="span"/>
+    </section>
+    <div className={menuOpen ? "open" : ""}>
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      {/* <a href="#timeline">Experience</a> */}
+      <a href="#skills">Skills</a>
+      {/* <a href="#testimonial">Testimonial</a> */}
+      <a href="#contact">Contact</a>
     </div>
     <a href="mailto:rajas.mulik@gmail.com">
-        <button>Email</button>
+      <button>Email</button>
     </a>
-    </>
-)
+  </>
+);
 
-export default Header
+export default Header;

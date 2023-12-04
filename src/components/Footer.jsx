@@ -3,6 +3,7 @@ import {
     AiFillGithub,
     AiFillInstagram,
     AiOutlineArrowUp,
+    AiFillLinkedin
   } from "react-icons/ai";
   import hello from "../assests/footer-pic.png"
 
@@ -31,6 +32,9 @@ const Footer = () => {
           </a>
           <a href="https://github.com/hbin1911" target={"blank"}>
             <AiFillGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/rajas-mulik-a2872a242/" target={"blank"}>
+            <AiFillLinkedin />
           </a>
         </article>
       </aside>
