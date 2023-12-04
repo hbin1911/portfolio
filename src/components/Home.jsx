@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState,useRef,useEffect } from 'react';
 import {animate, motion} from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import {BsArrowDown, BsArrowUpRight, BsChevronDown} from "react-icons/bs";
@@ -6,8 +6,10 @@ import me from "../assests/profile-pic.png"
 
 const Home = () => {
 
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   const clientCount = useRef(null);
-  const projectsCount = useRef(null);
+  const projectsCount = useRef(0);
   //counting animation for +100 clients
 
   const animationClientsCount = () => {
@@ -46,6 +48,20 @@ const Home = () => {
       }
     }
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+      
+      setNavbarOpen(false);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div id='home'>
       <section>
@@ -63,10 +79,10 @@ const Home = () => {
             }}/>
 
             <div>
-              <a href="../assests/Rajas_Resume.pdf" target='blank'>
+              <a href="../assests/Rajas Resume-1-1-1.pdf" target='_blank' download="Rajas_Resume.pdf">
                 Resume <BsArrowDown/>
               </a>
-              <a href="#work">
+              <a href="#Work">
                 Projects <BsArrowUpRight/>
               </a>
               
@@ -99,7 +115,11 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <img src={me} alt="Rajas" />
+      <motion.img
+          src={me}
+          alt='Rajas'
+          
+        />
       </section>
       {/* <BsChevronDown/> */}
     </div>

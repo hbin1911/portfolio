@@ -1,15 +1,17 @@
 import React, {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import NavContent from './NavContent'; 
 
 
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
+  // const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav id="header">
-      <NavContent menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <NavContent menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </nav>
   );
 };
@@ -25,7 +27,7 @@ const NavContent = ({menuOpen, setMenuOpen}) => (
     </section>
     <div className={menuOpen ? "open" : ""}>
       <a href="#home">Home</a>
-      <a href="#work">Work</a>
+      <a href="#Work">Work</a>
       {/* <a href="#timeline">Experience</a> */}
       <a href="#skills">Skills</a>
       {/* <a href="#testimonial">Testimonial</a> */}
