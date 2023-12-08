@@ -24,7 +24,7 @@ const Work = () => {
                   <div className="card-content">
                     <h2 className="name">{data.title}</h2>
                     <p className="description">
-                      {data.description}
+                    {`${data.description.substring(0, 120)}...`}
                     </p>
                     
                   </div>

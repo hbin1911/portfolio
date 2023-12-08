@@ -3,45 +3,38 @@
   "projects": [
     {
       "date": "07/10/2022",
-      "title": "TECHY STAR",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "github_url": "https://github.com",
-      "demo_url": "https://reactone-nine.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
+      "title": "WEATHER APP",
+      "description": "I developed a dynamic and responsive weather application using React, showcasing my proficiency in modern web development technologies. The application provides real-time weather information and forecasts based on user-selected locations.",
+      "github_url": "https://github.com/hbin1911/weather_app_react",
+      "demo_url": "https://weather-app-rajas.vercel.app/",
+      "imgSrc": "https://study.com/cimages/videopreview/weather-definition-and-types_113503.jpg"
     },
 
     {
       "date": "11/10/2022",
-      "title": "VIDEO HUB",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "github_url": "https://github.com",
-      "demo_url": "https://reactone-nine.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+      "title": "PASSWORD GENERATOR",
+      "description": "Designed and implemented a robust Password Generator web application using React, showcasing proficiency in front-end development and state management. The application allows users to create secure and customizable passwords for various online accounts.",
+      "github_url": "https://github.com/hbin1911/react_passwordGenerator",
+      "demo_url": "https://password-generator-theta-three.vercel.app/",
+      "imgSrc": "https://media.istockphoto.com/id/808424876/photo/password-input-field-with-padlock.jpg?s=612x612&w=0&k=20&c=vvaVPgT61fbRU_YXCgPr_EaaleWOJid5gBQ65-Jrcg4="
     },
     {
       "date": "15/10/2022",
-      "title": "XCrypto",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "github_url": "https://github.com",
-      "demo_url": "https://reactone-nine.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
+      "title": "PORTFOLIO",
+      "description": "Developed a dynamic and responsive personal portfolio website using React, showcasing a combination of technical proficiency and creative design. This project serves as a testament to my expertise in front-end development and user interface design. Leveraging React's component-based architecture, the website offers a seamless and engaging user experience.",
+      "github_url": "https://github.com/hbin1911/portfolio",
+      "demo_url": "https://rajasportfolio.vercel.app/",
+      "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
     },
 
     {
       "date": "17/10/2022",
-      "title": "REACT CART",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "github_url": "https://github.com",
-      "demo_url": "https://reactone-nine.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg"
-    },
-    {
-      "date": "20/10/2022",
-      "title": "PORTFOLIO",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "github_url": "https://github.com",
-      "demo_url": "https://reactone-nine.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      "title": "TEXT-TRANSFORM APP",
+      "description": "As a passionate and innovative developer, I conceptualized and implemented a dynamic Text Transform project using React, showcasing my proficiency in front-end web development. This project serves as a testament to my skills in crafting user-friendly interfaces and leveraging the power of React components.",
+      "github_url": "https://github.com/hbin1911/TextUtils",
+      "demo_url": "https://text-modifier-delta.vercel.app/",
+      "imgSrc": "https://images.ctfassets.net/lzny33ho1g45/3UledJfiKuozjrbvtFMv2c/d92e2d14cd5773d93981db2ef859c343/proodread-text-to-speech-00-hero.png?w=1520&fm=jpg&q=30&fit=thumb&h=760"
     }
+    
   ]
 }
