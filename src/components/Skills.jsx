@@ -44,7 +44,7 @@ const Skills = () => {
                   />
                   <div>
                     <h3>Bootstrap</h3>
-                    <p>Intermediate</p>
+                    <p>Beginner</p>
                   </div>
                 </article>
                 <article>
@@ -55,7 +55,7 @@ const Skills = () => {
                   />
                   <div>
                     <h3>JavaScript</h3>
-                    <p>Basic</p>
+                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -66,10 +66,10 @@ const Skills = () => {
                   />
                   <div>
                     <h3>React JS</h3>
-                    <p>Basic</p>
+                    <p>Experienced</p>
                   </div>
                 </article>
-                <article>
+                {/* <article>
                   <img
                     src={check}
                     alt="Experience icon"
@@ -79,7 +79,7 @@ const Skills = () => {
                     <h3>Material UI</h3>
                     <p>Intermediate</p>
                   </div>
-                </article>
+                </article> */}
               </div>
             </div>
             <div className="details-container">
