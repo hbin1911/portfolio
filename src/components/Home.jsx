@@ -72,7 +72,7 @@ const Home = () => {
             </motion.h1>
 
             <Typewriter options={{
-              strings: ['I am a Web Developer, Web Desingner and Full Stack Developer'],
+              strings: ['I am a Web Developer, Web Designer and Full Stack Developer'],
               autoStart: true,
               loop: true,
               cursor: "",
